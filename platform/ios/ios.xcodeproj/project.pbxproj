@@ -787,6 +787,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		002F055324F5914800FF4463 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		071BBAFC1EE75CD4001FB02A /* MGLImageSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGLImageSource.h; sourceTree = "<group>"; };
 		071BBAFD1EE75CD4001FB02A /* MGLImageSource.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MGLImageSource.mm; sourceTree = "<group>"; };
 		071BBB051EE7761A001FB02A /* MGLImageSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGLImageSourceTests.m; path = ../../darwin/test/MGLImageSourceTests.m; sourceTree = "<group>"; };
@@ -1814,6 +1815,7 @@
 		DA1DC9411CB6C1C2006E619F = {
 			isa = PBXGroup;
 			children = (
+				002F055324F5914800FF4463 /* Package.swift */,
 				CA8A30C324ABA688008CB6D8 /* Carthage */,
 				1F7839A5235E137000D4D606 /* sideload_sat.db */,
 				402E9DE21CD3A56500FD4519 /* Playground */,

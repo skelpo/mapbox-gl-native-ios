@@ -37,6 +37,8 @@ test/fixtures/storage/assets.zip
 /vendor/.cache
 buck-out
 .buckd
+.swiftpm/
+.build/
 
 # Generated file from npm/yarn
 package-lock.json

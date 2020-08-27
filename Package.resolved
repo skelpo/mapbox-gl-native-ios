@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "mapbox-events-ios",
+        "repositoryURL": "https://github.com/skelpo/mapbox-events-ios.git",
+        "state": {
+          "branch": "master",
+          "revision": "ad54665b2ec38b26bc648f389fb999e94866806e",
+          "version": null
+        }
+      },
+      {
+        "package": "MBGLCore",
+        "repositoryURL": "https://github.com/skelpo/MBGLCore.git",
+        "state": {
+          "branch": "master",
+          "revision": "8ff84f4406756ce2b9c667586f262adc56dd8098",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
