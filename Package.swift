@@ -7,8 +7,7 @@ import Foundation
 let _package = Package(
     name: "Mapbox",
     products: [
-        .library(name: "Mapbox", targets: ["Mapbox"]
-        ),
+        .library(name: "Mapbox", targets: ["Mapbox"]),
     ],
     dependencies: [
         .package(url: "https://github.com/skelpo/mapbox-events-ios.git", .branch("master")),
@@ -73,7 +72,14 @@ let _package = Package(
 
                 "macos/"
             ],
-            publicHeadersPath: "platform/"
+            publicHeadersPath: "platform/",
+            swiftSettings: [
+                .unsafeFlags([
+                    "--build-system", "xcode",
+                    "-Xxcbuild", "--buildParametersFile",
+                    "-Xxcbuild", "$PWD/swift_package_manager_build_parameters.json"
+                ])
+            ]
         )
     ]
 )
