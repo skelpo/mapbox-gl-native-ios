@@ -11,7 +11,7 @@ let _package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/skelpo/mapbox-events-ios.git", .branch("master")),
-        .package(url: "https://github.com/skelpo/MBGLCore.git", .branch("master"))
+        .package(url: "https://github.com/skelpo/MBGLCore.git", from: "0.2.0")
     ],
     targets: [
         .target(

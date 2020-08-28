@@ -14,9 +14,9 @@
         "package": "MBGLCore",
         "repositoryURL": "https://github.com/skelpo/MBGLCore.git",
         "state": {
-          "branch": "master",
+          "branch": null,
           "revision": "927564cb11c17a8d3ecb968425771735754bce85",
-          "version": null
+          "version": "0.2.0"
         }
       }
     ]
