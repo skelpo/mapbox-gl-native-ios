@@ -72,14 +72,7 @@ let _package = Package(
 
                 "macos/"
             ],
-            publicHeadersPath: "platform/",
-            swiftSettings: [
-                .unsafeFlags([
-                    "--build-system", "xcode",
-                    "-Xxcbuild", "--buildParametersFile",
-                    "-Xxcbuild", "$PWD/swift_package_manager_build_parameters.json"
-                ])
-            ]
+            publicHeadersPath: "platform/"
         )
     ]
 )
