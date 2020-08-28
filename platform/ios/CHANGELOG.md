@@ -2,7 +2,7 @@
 
 Mapbox welcomes participation and contributions from everyone. Please read [CONTRIBUTING.md](../../CONTRIBUTING.md) to get started.
 
-# master
+## 6.2.0
 
 ### ✨ New features
 
@@ -11,8 +11,9 @@ Mapbox welcomes participation and contributions from everyone. Please read [CONT
 * Added `[MGLLocationManagerDelegate locationManagerDidChangeAuthorization:]` to let `MGLMapView` know about privacy changes. ([#376](https://github.com/mapbox/mapbox-gl-native-ios/pull/376))
 * Added `[MGLMapViewDelegate mapView:didChangeLocationManagerAuthorization:]` to allow developers adjust their apps to privacy settings changes. ([#376](https://github.com/mapbox/mapbox-gl-native-ios/pull/376))
 * Added an approximate user location halo when `MGLLocationManager.accuracyAuthorization` is set to `CLAccuracyAuthorizationReducedAccuracy`. ([#381](https://github.com/mapbox/mapbox-gl-native-ios/pull/381))
+* The `MGLAccuracyAuthorizationDescription` as element of `NSLocationTemporaryUsageDescriptionDictionary` Info.plist key can now be set to describe why you request accuracy authorization. ([#392](https://github.com/mapbox/mapbox-gl-native-ios/pull/392))
 
-## 6.1.0
+## 6.1.0 - August 26, 2020
 
 * Added the `MGLStyle.accessiblePlaceSourceLayerIdentifiers` property to cause VoiceOver to read aloud certain layers in `MGLVectorTileSource`s as places, the same way that certain layers in the Mapbox Streets source are already read aloud as places. ([#336](https://github.com/mapbox/mapbox-gl-native-ios/pull/336))
 
