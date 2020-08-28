@@ -7,7 +7,7 @@ import Foundation
 let _package = Package(
     name: "mapbox-gl-native-ios",
     products: [
-        .library(name: "mapbox-gl-native-ios", targets: ["Mapbox"]),
+        .library(name: "Mapbox", targets: ["Mapbox"]),
     ],
     dependencies: [
         .package(url: "https://github.com/skelpo/mapbox-events-ios.git", .branch("master")),
