@@ -436,6 +436,21 @@ MGL_EXPORT
  */
 @property (nonatomic, assign) MGLMapViewPreferredFramesPerSecond preferredFramesPerSecond;
 
+
+/**
+ :nodoc:
+ Whether map rendering should occur during the `UIApplicationStateInactive` state.
+
+ The default value of this property is `YES`. This matches the behavior of SDKs
+ pre 6.2.0.
+
+ This property is ignored for map views where background rendering is permitted.
+
+ This property should be considered undocumented, and prone to change.
+ */
+@property (nonatomic, assign) BOOL renderingInInactiveStateEnabled;
+
+
 /**
  A Boolean value indicating whether the map should prefetch tiles.
  
@@ -1886,7 +1901,7 @@ MGL_EXPORT
     the style URL to an explicitly versioned style using a convenience method
     like `+[MGLStyle outdoorsStyleURLWithVersion:]`, `MGLMapView`’s “Style URL”
     inspectable in Interface Builder, or a manually constructed `NSURL`. This
-    approach also avoids layer identifer name changes that will occur in the
+    approach also avoids layer identifier name changes that will occur in the
     default style’s layers over time.
 
  @param point A point expressed in the map view’s coordinate system.
@@ -1984,7 +1999,7 @@ MGL_EXPORT
  style URL to an explicitly versioned style using a convenience method like
  `+[MGLStyle outdoorsStyleURLWithVersion:]`, `MGLMapView`’s “Style URL”
  inspectable in Interface Builder, or a manually constructed `NSURL`. This
- approach also avoids layer identifer name changes that will occur in the
+ approach also avoids layer identifier name changes that will occur in the
  default style’s layers over time.
 
  @note Layer identifiers are not guaranteed to exist across styles or different
@@ -1992,7 +2007,7 @@ MGL_EXPORT
     the style URL to an explicitly versioned style using a convenience method
     like `+[MGLStyle outdoorsStyleURLWithVersion:]`, `MGLMapView`’s “Style URL”
     inspectable in Interface Builder, or a manually constructed `NSURL`. This
-    approach also avoids layer identifer name changes that will occur in the
+    approach also avoids layer identifier name changes that will occur in the
     default style’s layers over time.
 
  @param rect A rectangle expressed in the map view’s coordinate system.
